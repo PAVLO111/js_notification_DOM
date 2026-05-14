@@ -6,7 +6,6 @@ const pushNotification = (posTop, posRight, title, description, type) => {
   const mainBlock = document.createElement('div');
 
   mainBlock.classList.add('notification', type);
-  // document.body.append(mainBlock);
 
   const titleNotification = document.createElement('h2');
 
@@ -19,7 +18,6 @@ const pushNotification = (posTop, posRight, title, description, type) => {
   descriptionNotification.textContent = description;
   mainBlock.append(descriptionNotification);
 
-  mainBlock.style.position = 'absolute';
   mainBlock.style.top = posTop + 'px';
   mainBlock.style.right = posRight + 'px';
   document.body.append(mainBlock);
