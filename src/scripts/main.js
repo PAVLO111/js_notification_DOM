@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 'use strict';
 
 const pushNotification = (posTop, posRight, title, description, type) => {
